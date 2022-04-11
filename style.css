@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); 
+*{
+    margin: 0; 
+    padding: 0;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+}
+body{ 
+    height: 100vh; 
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+    background: rgb(126, 5, 5);
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    position: relative;
+    width: 400px;
+    background: darkslategray;
+    padding: 40px 40px;
+}
+header{
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-family: 'Georgia' ;
+}
+.input-field, form .button{
+    margin: 25px 0;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+.input-field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+    transition: .4s;
+}
+input:focus{
+     border: 2px solid #1DA1F2;
+}
+.input-field label{
+    position: absolute;
+    top: -50%;
+    /* transform: translateY(-50%) ; */
+}
+form .button{
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 111;
+}
+.button .inner{
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    z-index: -1;
+    background: rgb(174, 250, 174);
+}
+.button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.links{
+    display: flex;
+    cursor: pointer;
+    color: wheat;
+    margin:0 0 20px 0;
+}
+.google{
+    margin-left: 10px;
+}
+.facebook, .google{
+    width: 100%;
+    height: 42px;
+    line-height: 45px;
+    margin-top: 10px;
+    text-align: center;
+    background:rgb(174, 250, 174);
+    color: black;
+    border: 1px;
+
+}
